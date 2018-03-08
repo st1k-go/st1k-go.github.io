@@ -1,0 +1,85 @@
+<style type="text/css">@charset "UTF-8";
+
+@import url("http://fonts.googleapis.com/css?family=Ubuntu+Condensed");
+
+@import url("vendor.css");
+
+{
+					color: #F8F8FF;
+					font-size: 14pt;
+					font-family: Consolas;
+					text-shadow: 2px 3px 2px black;
+
+				}
+				right
+				{
+					float: right;
+					margin-right: 180px;
+					-webkit-animation: fadein 4s;
+					   -moz-animation: fadein 4s;
+					    -ms-animation: fadein 4s;
+					     -o-animation: fadein 4s;
+            					animation: fadein 4s;
+				}
+				left
+				{
+					float: left;
+					margin-left: 180px;
+					-webkit-animation: fadein 4s;
+					   -moz-animation: fadein 4s;
+					    -ms-animation: fadein 4s;
+					     -o-animation: fadein 4s;
+            					animation: fadein 4s;
+				}
+				shake.shake,
+				.shake.inline
+				{
+					display:inline-block
+				}
+
+			@keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+
+			@-moz-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+
+			@-webkit-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+
+			@-ms-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+
+			@-o-keyframes fadein {
+				from { opacity: 0; }
+				to   { opacity: 1; }
+			}
+			@keyframes shakenz {
+				0% { transform: translate(4px, 3px) rotate(0deg); }
+				10% { transform: translate(-5px, -3px) rotate(-1deg); }
+				20% { transform: translate(-4px, 2px) rotate(1deg); }
+				30% { transform: translate(2px, 3px) rotate(0deg); }
+				40% { transform: translate(1px, -3px) rotate(1deg); }
+				50% { transform: translate(-3px, 3px) rotate(-1deg); }
+				60% { transform: translate(-4px, 3px) rotate(0deg); }
+				70% { transform: translate(4px, 3px) rotate(-1deg); }
+				80% { transform: translate(-4px, -3px) rotate(1deg); }
+				90% { transform: translate(5px, 3px) rotate(0deg); }
+				100% { transform: translate(4px, 3px) rotate(-1deg); }
+			}
+			.shake:hover,
+			.shake:focus {
+				animation-name: shakenz;
+				animation-duration: 0.3s;
+				transform-origin:75% 90%;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+</style>
